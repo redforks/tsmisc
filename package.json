@@ -1,0 +1,16 @@
+{
+  "name": "tsmisc",
+  "version": "1.0.0",
+  "description": "Misc functions for typescript",
+  "main": "index.js",
+  "author": "redforks@gmail.com",
+  "license": "MIT",
+  "scripts": {
+    "prepublishOnly": "tsc"
+  },
+  "devDependencies": {
+    "mytslint": "^1.0.7",
+    "tslint": "^5.10.0",
+    "typescript": "^2.9.2"
+  }
+}
