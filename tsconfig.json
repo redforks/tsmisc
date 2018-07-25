@@ -1,27 +1,6 @@
 {
+  "extends": "./node_modules/mytslint/tsconfig.json",
   "compilerOptions": {
-    "module": "commonjs",
-    "importHelpers": true,
-    "strict": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "strictFunctionTypes": true,
-    "noImplicitThis": true,
-    "alwaysStrict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "moduleResolution": "node",
-
-    "baseUrl": "./",
-    "outDir": "./lib",
-    "sourceMap": true,
-    "declaration": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "target": "es5",
-    "lib": ["es2017"],
-    "paths": {}
+    "outDir": "./lib"
   }
 }
