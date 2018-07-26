@@ -1,3 +1,5 @@
+export * from './config';
+
 /**
  * Return a promise resolved after ms millisecond.
  * @param ms milliseconds to wait

@@ -1,6 +1,6 @@
 {
   "name": "tsmisc",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Misc functions for typescript",
   "main": "lib/index.js",
   "types": "lib/index.d.js",
