@@ -1,6 +1,6 @@
 {
   "name": "tsmisc",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Misc functions for typescript",
   "main": "lib/index.js",
   "types": "lib/index.d.js",
@@ -12,7 +12,7 @@
   "devDependencies": {
     "@types/jest": "^23.1.5",
     "jest": "^23.4.0",
-    "mytslint": "^1.0.7",
+    "mytslint": "^1.1.1",
     "ts-jest": "^23.0.0",
     "tslint": "^5.10.0",
     "typescript": "^2.9.2"
@@ -30,5 +30,10 @@
       "json",
       "node"
     ]
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.113",
+    "funts": "^1.1.0",
+    "lodash": "^4.17.10"
   }
 }

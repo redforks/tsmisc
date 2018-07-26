@@ -20,6 +20,10 @@
   version "23.3.0"
   resolved "http://registry.npm.taobao.org/@types/jest/download/@types/jest-23.3.0.tgz#5dd70033b616a6228042244ebd992f6426808810"
 
+"@types/lodash@^4.14.113":
+  version "4.14.113"
+  resolved "http://registry.npm.taobao.org/@types/lodash/download/@types/lodash-4.14.113.tgz#1d1cb063f17fec4cc46f1a90d978ebf441113061"
+
 abab@^1.0.4:
   version "1.0.4"
   resolved "http://registry.npm.taobao.org/abab/download/abab-1.0.4.tgz#5faad9c2c07f60dd76770f71cf025b62a63cfd4e"
@@ -1058,6 +1062,10 @@ fsevents@^1.0.0, fsevents@^1.2.3:
 function-bind@^1.1.1:
   version "1.1.1"
   resolved "http://registry.npm.taobao.org/function-bind/download/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
+
+funts@^1.1.0:
+  version "1.1.0"
+  resolved "http://registry.npm.taobao.org/funts/download/funts-1.1.0.tgz#b349ada7e3ba98c0513f2a889aaeb69f0788e6a3"
 
 gauge@~2.7.3:
   version "2.7.4"
@@ -2156,9 +2164,9 @@ ms@2.0.0:
   version "2.0.0"
   resolved "http://registry.npm.taobao.org/ms/download/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
 
-mytslint@^1.0.7:
-  version "1.0.7"
-  resolved "http://registry.npm.taobao.org/mytslint/download/mytslint-1.0.7.tgz#f0ae13c834c894353c73d28413632d0b1bb80f35"
+mytslint@^1.1.1:
+  version "1.1.1"
+  resolved "http://registry.npm.taobao.org/mytslint/download/mytslint-1.1.1.tgz#1b5d6ad6642e7b41f30b436ce51f1e80c378ce40"
 
 nan@^2.9.2:
   version "2.10.0"
