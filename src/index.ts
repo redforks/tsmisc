@@ -5,3 +5,15 @@
 export function delay<T>(ms: number, v?: T): Promise<T> {
   return new Promise((resolve) => setTimeout(() => resolve(v), ms));
 }
+
+/**
+ * Returns a random unique guid string.
+ */
+export function guid(): string {
+  function s4() {
+    return Math.floor((1 + Math.random()) * 0x10000)
+      .toString(16)
+      .substring(1);
+  }
+  return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
+}
