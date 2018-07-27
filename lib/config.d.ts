@@ -10,4 +10,4 @@ export interface SettableConfig {
     app: Partial<AppConfig>;
 }
 export declare function setConfig<K extends keyof Config>(cfg: Pick<DeepPartial<Config>, K>): void;
-export declare function config(): Config;
+export declare function getConfig(): Config;

@@ -28,6 +28,6 @@ export function setConfig<K extends keyof Config>(cfg: Pick<DeepPartial<Config>,
   option = merge(option, cfg as any);
 }
 
-export function config(): Config {
+export function getConfig(): Config {
   return option;
 }

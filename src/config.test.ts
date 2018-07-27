@@ -1,4 +1,4 @@
-import { config, setConfig } from './config';
+import { getConfig, setConfig } from './config';
 
 declare module './config' {
   export interface TestConfig {
@@ -25,14 +25,14 @@ it('ui.title', () => {
       Counts: 3,
     },
   });
-  expect(config().app.title).toEqual('foo');
-  expect(config().test.foo).toEqual({ bar: 'foobar', misc: 'origin' });
+  expect(getConfig().app.title).toEqual('foo');
+  expect(getConfig().test.foo).toEqual({ bar: 'foobar', misc: 'origin' });
 
   setConfig({
     test: {
       foo: { bar: 'blah' },
     },
   });
-  expect(config().app.title).toEqual('foo');
-  expect(config().test.foo).toEqual({ bar: 'blah', misc: 'origin' });
+  expect(getConfig().app.title).toEqual('foo');
+  expect(getConfig().test.foo).toEqual({ bar: 'blah', misc: 'origin' });
 });
