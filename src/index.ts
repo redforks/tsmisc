@@ -1,5 +1,6 @@
 export * from './config';
 export * from './strings';
+export * from './date';
 
 /**
  * Return a promise resolved after ms millisecond.
