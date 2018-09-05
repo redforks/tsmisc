@@ -1,4 +1,4 @@
-import { today, toYearMonthDay } from './date';
+import { today, toFullTime, toYearMonthDay } from './date';
 
 describe('date', () => {
   beforeEach(() => {
@@ -17,4 +17,8 @@ describe('date', () => {
 
 it('toYearMonthDay', () => {
   expect(toYearMonthDay(new Date(2018, 7, 5))).toBe('2018-08-05');
+});
+
+it('toFullTime', () => {
+  expect(toFullTime(new Date(2018, 8, 5, 9, 8, 5))).toBe('2018-09-05 09:08:05');
 });

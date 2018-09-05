@@ -17,3 +17,10 @@ function padTwo(n: number) {
 export function toYearMonthDay(d: Date) {
   return `${d.getFullYear()}-${padTwo(d.getMonth() + 1)}-${padTwo(d.getDate())}`;
 }
+
+/**
+ * Convert date to 'yyyy-mm-dd hh:mm:ss' format
+ */
+export function toFullTime(d: Date) {
+  return `${toYearMonthDay(d)} ${padTwo(d.getHours())}:${padTwo(d.getMinutes())}:${padTwo(d.getSeconds())}`;
+}
