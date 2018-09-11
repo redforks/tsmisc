@@ -24,7 +24,8 @@ export interface SettableConfig {
   app: Partial<AppConfig>;
 }
 
-export function setConfig<K extends keyof Config>(cfg: Pick<DeepPartial<Config>, K>) {
+export function setConfig<K extends keyof Config>(
+  cfg: Readonly<Pick<DeepPartial<Config>, K>>) {
   option = merge(option, cfg as any);
 }
 
