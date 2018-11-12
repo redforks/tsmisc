@@ -11,7 +11,7 @@ declare module './config' {
   }
 
   export interface Config {
-    test: TestConfig;
+    test?: TestConfig;
   }
 }
 
@@ -26,7 +26,7 @@ it('ui.title', () => {
     },
   });
   expect(getConfig().app.title).toEqual('foo');
-  expect(getConfig().test.foo).toEqual({ bar: 'foobar', misc: 'origin' });
+  expect(getConfig().test!.foo).toEqual({ bar: 'foobar', misc: 'origin' });
 
   setConfig({
     test: {
@@ -34,5 +34,5 @@ it('ui.title', () => {
     },
   });
   expect(getConfig().app.title).toEqual('foo');
-  expect(getConfig().test.foo).toEqual({ bar: 'blah', misc: 'origin' });
+  expect(getConfig().test!.foo).toEqual({ bar: 'blah', misc: 'origin' });
 });

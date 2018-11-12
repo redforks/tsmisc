@@ -1,5 +1,5 @@
 import { DeepPartial } from 'funts';
-import { merge } from 'lodash';
+import merge from 'lodash/fp/merge';
 
 export interface AppConfig {
   title: string;
