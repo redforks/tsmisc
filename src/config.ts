@@ -1,5 +1,5 @@
 import { DeepPartial } from 'funts';
-import merge from 'lodash/fp/merge';
+import { mergeDeepRight } from 'ramda';
 
 export interface AppConfig {
   title: string;
@@ -26,7 +26,7 @@ export interface SettableConfig {
 
 export function setConfig<K extends keyof Config>(
   cfg: Readonly<Pick<DeepPartial<Config>, K>>) {
-  option = merge(option, cfg as any);
+  option = mergeDeepRight(option, cfg as any);
 }
 
 export function getConfig(): Config {
