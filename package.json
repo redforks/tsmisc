@@ -1,6 +1,6 @@
 {
   "name": "tsmisc",
-  "version": "1.7.3",
+  "version": "1.7.4",
   "description": "Misc functions for typescript",
   "main": "lib/index.js",
   "types": "lib/index.d.js",
@@ -34,6 +34,9 @@
   "dependencies": {
     "@types/lodash": "^4.14.113",
     "funts": "^1.1.0",
-    "lodash": "^4.17.10"
+    "lodash": "^4.17.11"
+  },
+  "peerDependencies": {
+    "lodash": ">=4.17.0"
   }
 }
