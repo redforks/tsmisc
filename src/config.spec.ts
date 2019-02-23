@@ -26,6 +26,7 @@ it('ui.title', () => {
     },
   });
   expect(getConfig().app.title).toEqual('foo');
+  // tslint:disable-next-line:no-non-null-assertion
   expect(getConfig().test!.foo).toEqual({ bar: 'foobar', misc: 'origin' });
 
   setConfig({
@@ -34,5 +35,6 @@ it('ui.title', () => {
     },
   });
   expect(getConfig().app.title).toEqual('foo');
+  // tslint:disable-next-line:no-non-null-assertion
   expect(getConfig().test!.foo).toEqual({ bar: 'blah', misc: 'origin' });
 });

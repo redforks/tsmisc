@@ -7,6 +7,8 @@
   "author": "redforks@gmail.com",
   "license": "MIT",
   "scripts": {
+    "lint": "tsc --noEmit -p . && tslint --project . ",
+    "test": "jest",
     "prepublishOnly": "tsc"
   },
   "devDependencies": {
