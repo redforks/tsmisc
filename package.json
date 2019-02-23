@@ -18,6 +18,7 @@
     "mytslint": "^1.4.0",
     "ts-jest": "^24.0.0",
     "tslint": "^5.12.1",
+    "ramda": "~0.26.0",
     "typescript": "^3.2.4"
   },
   "jest": {
@@ -38,6 +39,6 @@
     "funts": "^1.6.2"
   },
   "peerDependencies": {
-    "ramda": "^0.26.1"
+    "ramda": "~0.26.0"
   }
 }
