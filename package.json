@@ -1,6 +1,6 @@
 {
   "name": "tsmisc",
-  "version": "1.7.6",
+  "version": "1.8.0",
   "description": "Misc functions for typescript",
   "main": "lib/index.js",
   "types": "lib/index.d.js",
@@ -9,16 +9,20 @@
   "scripts": {
     "lint": "tsc --noEmit -p . && tslint --project . ",
     "test": "jest",
-    "prepublishOnly": "tsc"
+    "prepublishOnly": "gulp build"
   },
   "devDependencies": {
     "@types/jest": "^24.0.6",
     "@types/ramda": "^0.25.50",
+    "gulp": "^4.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-typescript": "^5.0.1",
     "jest": "^24.1.0",
     "mytslint": "^1.4.0",
+    "ramda": "~0.26.0",
     "ts-jest": "^24.0.0",
     "tslint": "^5.12.1",
-    "ramda": "~0.26.0",
     "typescript": "^3.2.4"
   },
   "jest": {
@@ -40,5 +44,8 @@
   },
   "peerDependencies": {
     "ramda": "~0.26.0"
-  }
+  },
+  "files": [
+    "lib"
+  ]
 }
